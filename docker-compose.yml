@@ -1,7 +1,12 @@
-version: '3.8'
+version: "3.8"
+
 services:
   portfolio:
     build:
-      context: .
+      context: ./portafolio
+      dockerfile: Dockerfile
     ports:
       - "80:80"
+    volumes:
+      - ./portafolio:/app
+      - /app/node_modules
