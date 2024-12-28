@@ -1,6 +1,7 @@
 #root {
   min-width: 720px;
   width: 80%;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -43,9 +44,12 @@
 }
 
 header {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #fff;
 }
 
 header a {

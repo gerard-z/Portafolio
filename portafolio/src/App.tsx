@@ -21,16 +21,16 @@ function App() {
       </header>
 
       <main>
-        <SectionContainer id="home" height="60vh">
+        <SectionContainer id="home" style={{ minHeight: '40%' }}>
           <Home language={language} />
         </SectionContainer>
 
-        <section id="about">
-          <h2>{translations[language].about}</h2>
-        </section>
-
         <section id="projects">
           <h2>{translations[language].projects}</h2>
+        </section>
+
+        <section id="about">
+          <h2>{translations[language].about}</h2>
         </section>
 
         <section id="contact">

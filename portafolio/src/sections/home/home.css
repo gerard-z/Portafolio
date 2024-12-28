@@ -1,7 +1,7 @@
 .name {
   font-weight: bold;
   color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -67,12 +67,12 @@ h2 {
 }
 
 @keyframes typing {
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-        width: 0;
-    }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
-        width: calc(100% + 8px);
-    }
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+    width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    width: calc(100% + 8px);
+  }
 }
 
 .description {
@@ -90,17 +90,57 @@ h2 {
   margin-left: 10pt;
 }
 
+.profile-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image {
+  width: 200pt;
+  height: 200pt;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  margin-left: 10pt;
+  transition: filter 0.3s ease;
+}
+
+.profile-image-container:hover .profile-image {
+  filter: blur(2px) brightness(70%);
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.profile-image-container:hover .contact-overlay {
+  opacity: 1;
+}
+
+.contact-overlay i {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
 .social-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .social-link {
-    padding: 8px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-  }
-  
-  .social-link:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+  width: 24px;
+  height: 24px;
+}
+
+.social-link {
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

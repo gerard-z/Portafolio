@@ -2,13 +2,13 @@ import './SectionContainer.css'
 
 interface SectionContainerProps {
   id: string
-  height?: string
+  style?: React.CSSProperties
   children: React.ReactNode
 }
 
-export const SectionContainer = ({ id, height, children }: SectionContainerProps) => {
+export const SectionContainer = ({ id, style, children }: SectionContainerProps) => {
   return (
-    <section className="section-container" id={id} style={{ height: height }}>
+    <section className="section-container" id={id} style={style}>
       {children}
     </section>
   )
