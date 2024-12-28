@@ -28,7 +28,7 @@ export const Home = ({ language }: HomeProps) => {
   return (
     <>
       <div className="flex flex-row-reverse items-center justify-around flex-wrap w-full">
-        <div className="flex flex-col items-end justify-center">
+        <div className="flex flex-col items-center justify-center">
           <a href="mailto:gerard.cathalifaud@hotmail.com" target="_blank" rel="noopener noreferrer" className="profile-image-container">
             <img src="images/profile.jpeg" alt="Gerard Cathalifaud Salazar" className="profile-image" />
             <div className="contact-overlay flex flex-row items-center justify-center">
