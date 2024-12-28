@@ -40,7 +40,7 @@ h2 {
   width: calc(100% + 8px);
   height: 100%;
   background-color: var(--background-color);
-  border-left: 2px solid var(--text-color);
+  border-left: 2px solid var(--text-special-color);
   right: -8px;
   animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }

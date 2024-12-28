@@ -3,6 +3,7 @@ import './App.css'
 import { translations, type Language } from './translations'
 import { SectionContainer } from './components/container/SectionContainer'
 import { Home } from './sections/home/home'
+import { AboutMe } from './sections/about/AboutMe'
 import { FaMoon, FaSun } from 'react-icons/fa'
 import { useTheme } from './hooks/utils/useTheme'
 
@@ -70,6 +71,7 @@ function App() {
               <a href="#home" onClick={handleNavClick}>{translations[language].home}</a>
               <a href="#projects" onClick={handleNavClick}>{translations[language].projects}</a>
               <a href="#about" onClick={handleNavClick}>{translations[language].about}</a>
+              {isMenuOpen && <a href="#education" onClick={handleNavClick}>{translations[language].education}</a>}
               <a href="#contact" onClick={handleNavClick}>{translations[language].contact}</a>
             </nav>
           </div>
@@ -92,7 +94,7 @@ function App() {
         </SectionContainer>
 
         <SectionContainer id="about" style={{ minHeight: '40%' }}>
-          <h2>{translations[language].about}</h2>
+          <AboutMe language={language} />
         </SectionContainer>
 
         <SectionContainer id="contact" style={{ minHeight: '40%' }}>

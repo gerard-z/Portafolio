@@ -11,6 +11,7 @@ type Translations = {
     iWorkAs: string;
     iAmLocatedIn: string;
     contactMe: string;
+    education: string;
   }
 }
 
@@ -24,7 +25,8 @@ export const translations: Translations = {
     iAm: 'soy',
     iWorkAs: 'Trabajo como',
     iAmLocatedIn: 'Ubicado en',
-    contactMe: 'Contáctame'
+    contactMe: 'Contáctame',
+    education: 'Educación'
   },
   en: {
     home: 'Home',
@@ -35,6 +37,7 @@ export const translations: Translations = {
     iAm: 'I am',
     iWorkAs: 'I work as',
     iAmLocatedIn: 'Located in',
-    contactMe: 'Contact Me'
+    contactMe: 'Contact Me',
+    education: 'Education'
   }
 } 
