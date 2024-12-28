@@ -1,6 +1,6 @@
 .name {
   font-weight: bold;
-  color: #fff;
+  color: var(--text-color);
   font-size: 3rem;
   text-wrap: balance;
   text-align: left;
@@ -8,7 +8,7 @@
 
 h2 {
   font-size: 2rem;
-  color: #fff;
+  color: var(--text-color);
   text-wrap: balance;
 }
 
@@ -19,7 +19,7 @@ h2 {
 
 .job {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--text-color);
   text-align: left;
 }
 
@@ -30,7 +30,7 @@ h2 {
 
 .job span::before {
   content: 'Desarrollador Full Stack';
-  color: #ff7f50;
+  color: var(--text-special-color);
   animation: words 20s infinite;
 }
 
@@ -39,15 +39,15 @@ h2 {
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: #242424;
-  border-left: 2px solid #fff;
+  background-color: var(--background-color);
+  border-left: 2px solid var(--text-color);
   right: -8px;
   animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
   to {
-    border-left: 2px solid #ff7f50;
+    border-left: 2px solid var(--text-color);
   }
 }
 
@@ -80,7 +80,7 @@ h2 {
 
 .description {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--text-color);
   text-align: left;
 }
 
@@ -97,7 +97,7 @@ h2 {
   height: 200pt;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #fff;
+  border: 2px solid var(--border-color);
   transition: filter 0.3s ease;
 }
 

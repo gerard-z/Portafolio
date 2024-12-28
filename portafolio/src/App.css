@@ -54,7 +54,7 @@
 }
 
 .menu-toggle:hover {
-  background-color: #0a0a0a;
+  background-color: var(--hover-background);
 }
 
 .menu-toggle:focus {
@@ -62,7 +62,7 @@
 }
 
 .menu-toggle:active {
-  background-color: #2a2a2a;
+  background-color: var(--menu-background);
 }
 
 .hamburger {
@@ -71,16 +71,23 @@
 
 header {
   position: fixed;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--header-background);
+  top: 0;
+  left: 0;
+  color: var(--text-color);
+}
+
+.header-container {
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  border-bottom: 1px solid #fff;
-  width: 100%;
-  z-index: 1000;
-  background-color: #1a1a1a;
-  left: 0;
-  top: 0;
 }
 
 header a {
@@ -104,7 +111,7 @@ header .container {
 }
 
 .nav-menu a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 1.5rem;
   padding: 5px;
@@ -130,10 +137,10 @@ header .container {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #2a2a2a;
     padding: 1rem;
     flex-direction: column;
     gap: 0.5rem;
+    background-color: var(--menu-background);
   }
 
   .nav-menu.active {
@@ -153,7 +160,7 @@ header .container {
     text-decoration-color: #646cff;
     text-decoration-thickness: 2px;
     text-decoration-style: wavy;
-    background-color: #0a0a0a;
+    background-color: var(--hover-background);
     border-radius: 5px;
   }
 
@@ -203,4 +210,10 @@ header .container {
 
 html {
   scroll-behavior: smooth;
+}
+
+.night-mode-button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }

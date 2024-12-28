@@ -3,10 +3,13 @@ import './App.css'
 import { translations, type Language } from './translations'
 import { SectionContainer } from './components/container/SectionContainer'
 import { Home } from './sections/home/home'
+import { FaMoon, FaSun } from 'react-icons/fa'
+import { useTheme } from './hooks/utils/useTheme'
 
 function App() {
   const [language, setLanguage] = useState<Language>('es')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { nightMode, toggleNightMode } = useTheme()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -49,29 +52,34 @@ function App() {
   return (
     <>
       <header>
-      <div className="container">
-          {/* Botón hamburguesa para móvil */}
-          <button 
-            className="menu-toggle"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-          >
-            <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
-              ☰
-            </span>
-          </button>
+        <div className="header-container">
+          <div className="container">
+            {/* Botón hamburguesa para móvil */}
+            <button 
+              className="menu-toggle"
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
+            >
+              <span className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
+                ☰
+              </span>
+            </button>
 
-          {/* Menú navegación */}
-          <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-            <a href="#home" onClick={handleNavClick}>{translations[language].home}</a>
-            <a href="#projects" onClick={handleNavClick}>{translations[language].projects}</a>
-            <a href="#about" onClick={handleNavClick}>{translations[language].about}</a>
-            <a href="#contact" onClick={handleNavClick}>{translations[language].contact}</a>
-          </nav>
+            {/* Menú navegación */}
+            <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+              <a href="#home" onClick={handleNavClick}>{translations[language].home}</a>
+              <a href="#projects" onClick={handleNavClick}>{translations[language].projects}</a>
+              <a href="#about" onClick={handleNavClick}>{translations[language].about}</a>
+              <a href="#contact" onClick={handleNavClick}>{translations[language].contact}</a>
+            </nav>
+          </div>
+          <button onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}>
+            {language === 'es' ? 'English' : 'Español'}
+          </button>
+          <button onClick={toggleNightMode} className="night-mode-button">
+            {nightMode ? <FaSun className="text-yellow-500 text-2xl" /> : <FaMoon className="text-gray-500 text-2xl" />}
+          </button>
         </div>
-        <button onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}>
-          {language === 'es' ? 'English' : 'Español'}
-        </button>
       </header>
 
       <main className="main">
