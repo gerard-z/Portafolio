@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import { translations, type Language } from './translations'
-
+import { SectionContainer } from './components/container/SectionContainer'
+import { Home } from './sections/home/home'
 function App() {
   const [language, setLanguage] = useState<Language>('es')
 
@@ -20,9 +21,9 @@ function App() {
       </header>
 
       <main>
-        <section id="home">
-          <h1>{translations[language].home}</h1>
-        </section>
+        <SectionContainer id="home" height="60vh">
+          <Home language={language} />
+        </SectionContainer>
 
         <section id="about">
           <h2>{translations[language].about}</h2>

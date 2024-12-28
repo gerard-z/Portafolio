@@ -10,5 +10,5 @@ El portafolio se encuentra alojado en el siguiente enlace: TODO
 
 + Control de versiones: Git
 + Lenguaje de programación: Javascript / Typescript
-+ Framework: React
++ Framework: React, Tailwind
 + Deploy: Docker, Vite, Vercel
