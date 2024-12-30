@@ -1,21 +1,16 @@
 .name {
   font-weight: bold;
   color: var(--text-color);
-  font-size: 3rem;
+  font-size: 2rem;
   text-wrap: balance;
   text-align: left;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--text-color);
   text-wrap: balance;
 }
-
-
-
-
-
 
 .job {
   font-size: 1.5rem;

@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 10pt;
-  padding: 10pt;
+  padding: 5pt;
   border-bottom: 4px dotted var(--border-color);
 }
