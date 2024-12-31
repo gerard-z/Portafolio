@@ -5,6 +5,7 @@ import { SectionContainer } from './components/container/SectionContainer'
 import { Home } from './sections/home/home'
 import { AboutMe } from './sections/about/AboutMe'
 import { ContactMe } from './sections/contact/ContactMe'
+import { Projects } from './sections/projects/Projects'
 import { FaMoon, FaSun } from 'react-icons/fa'
 import { useTheme } from './hooks/utils/useTheme'
 import { Skills } from './sections/about/Skills'
@@ -92,7 +93,7 @@ function App() {
         </SectionContainer>
 
         <SectionContainer id="projects" style={{ minHeight: '40%' }}>
-          <h2>{translations[language].projects}</h2>
+          <Projects language={language} />
         </SectionContainer>
 
         <SectionContainer id="about" style={{ minHeight: '40%' }}>

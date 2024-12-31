@@ -9,6 +9,7 @@
   margin: 0;
   gap: 0.5rem;
   flex-wrap: wrap;
+  height: 50px;
 }
 
 .horizontal-list li {

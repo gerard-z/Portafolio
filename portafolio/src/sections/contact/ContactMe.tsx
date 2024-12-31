@@ -37,9 +37,9 @@ export const ContactMe = ({ language }: ContactMeProps) => {
         ))}
       </div>
       <p>{translations[language].contactMeThroughEmail}</p>
-      <a href="mailto:gerard.cathalifaud@hotmail.com" target="_blank" rel="noopener noreferrer" className="email-link">
+      <a href="mailto:gerard@cathalifaud.dev" target="_blank" rel="noopener noreferrer" className="email-link">
         <FaEnvelope className="email-icon" />
-        gerard.cathalifaud@hotmail.com
+        gerard@cathalifaud.dev
       </a>
     </div>
   )

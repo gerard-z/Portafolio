@@ -28,6 +28,7 @@ type Translations = {
     and: string;
     skills: string;
     other: string;
+    projectsSoon: string;
   }
 }
 
@@ -59,6 +60,7 @@ export const translations: Translations = {
     and: "y",
     skills: "Habilidades",
     other: "Otros",
+    projectsSoon: "Pronto estarán disponibles",
   },
   en: {
     home: 'Home',
@@ -87,5 +89,6 @@ export const translations: Translations = {
     and: "and",
     skills: "Skills",
     other: "Other",
+    projectsSoon: "Soon available",
   }
 } 

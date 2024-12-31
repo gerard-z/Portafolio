@@ -1,0 +1,16 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.projects-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
