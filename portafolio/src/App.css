@@ -225,3 +225,29 @@ html {
   border: none;
   cursor: pointer;
 }
+
+.footer-container {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.footer-text a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 0.3rem;
+}
+
+.footer-text a:hover {
+  color: #646cff;
+  text-decoration: underline;
+}
+

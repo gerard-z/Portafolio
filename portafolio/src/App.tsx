@@ -4,6 +4,7 @@ import { translations, type Language } from './translations'
 import { SectionContainer } from './components/container/SectionContainer'
 import { Home } from './sections/home/home'
 import { AboutMe } from './sections/about/AboutMe'
+import { ContactMe } from './sections/contact/ContactMe'
 import { FaMoon, FaSun } from 'react-icons/fa'
 import { useTheme } from './hooks/utils/useTheme'
 
@@ -97,10 +98,22 @@ function App() {
           <AboutMe language={language} />
         </SectionContainer>
 
-        <SectionContainer id="contact" style={{ minHeight: '40%' }}>
-          <h2>{translations[language].contact}</h2>
+        <SectionContainer id="contact" style={{ minHeight: '40%', borderBottomWidth: 0 }}>
+          <ContactMe language={language} />
         </SectionContainer>
       </main>
+
+      <footer className="footer-container">
+        <p className="footer-text">
+          {translations[language].footerBuiltWith}
+          <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a>, 
+          <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">TypeScript</a>, 
+          <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">Tailwind CSS</a> {translations[language].and} 
+          <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite</a>. {translations[language].footerHostedOn}
+          <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>.
+        </p>
+        <p className="footer-text">© 2025 Gerard Cathalifaud.</p>
+      </footer>
     </>
   )
 }

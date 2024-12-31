@@ -44,7 +44,7 @@ export const Home = ({ language }: HomeProps) => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col items-start justify-center">
+        <div className="flex flex-col items-start justify-center flex-1 basis-96">
           <h2>{translations[language].hello}</h2>
           <h2><span className="name">Gerard Cathalifaud Salazar</span></h2>
           <p className="job">{translations[language].iWorkAs} <span></span></p>
