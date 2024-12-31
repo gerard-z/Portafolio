@@ -16,8 +16,8 @@ export const AboutMe = ({ language }: AboutMeProps) => {
           {language === 'es' ? (
             <p>
               En 2019 comencé mis estudios en la universidad de Chile, en la carrera de Ingeniería Civil en Computación. 
-              En un principio, tomé la carrera para utilizar los primeros dos años de plan común para poder elegir una carrera más específica.
-              LLegué a cursar un año de Ingeniería Civil en Matemáticas, donde aprendí conceptos claves sobre topología, teoría de la medida y teoría de la probabilidad.
+              En un principio, tomé la carrera para utilizar los primeros dos años de plan común como un tiempo extra para elegir una carrera más específica.
+              Llegué a cursar un año de Ingeniería Civil en Matemáticas, donde aprendí conceptos claves sobre topología, teoría de la medida y teoría de la probabilidad.
               Sin embargo, no me sentía cómodo con la carrera, y por otro lado, los electivos de la carrera de computación me llamaron más la atención.
               Así que, en 2022 cambié a la carrera de Ingeniería Civil en Computación.
               Durante mi carrera, aprendí conceptos de matemáticas, algoritmos, bases de datos, programación, entre otros. Tomando electivos interesantes como:
@@ -56,17 +56,17 @@ export const AboutMe = ({ language }: AboutMeProps) => {
         <div id="education" className="about-me-education">
             <h2><FaGraduationCap /> {translations[language].education}</h2>
             <ul>
-                <li><VerticalCard dateFrom="2019" dateTo="2024" title="Ingeniería Civil en Computación" subtitle="Universidad de Chile">
+                <li><VerticalCard dateFrom="2019" dateTo="2024" title={translations[language].degree} subtitle={translations[language].university}>
                         <ul className="degree-list">
-                            <li>Proyecto de Titulación: Utility AI para personajes no jugadores en videojuegos</li>
-                            <li>Ayudante de curso: Arquitectura de Computadores, Programación de software de sistemas, Arquitectura de Motores de Videojuegos</li>
+                            <li>{translations[language].assistant}</li>
+                            <li>{translations[language].thesisProject}</li>
                         </ul>
                     </VerticalCard>
                 </li>
-                <li><VerticalCard dateFrom="2019" dateTo="2023" title="Licenciatura en Ciencias de la Computación" subtitle="Universidad de Chile">
+                <li><VerticalCard dateFrom="2019" dateTo="2023" title={translations[language].degree2} subtitle={translations[language].university}>
                         <ul className="degree-list">
-                            <li>Participación en proyecto estudiantil de automóvil solar EOLIAN</li>
-                            <li>Realización de proyectos de videojuegos en Godot 2D para taller de videojuegos</li>
+                            <li>{translations[language].eolian}</li>
+                            <li>{translations[language].godot}</li>
                         </ul>
                     </VerticalCard>
                 </li>

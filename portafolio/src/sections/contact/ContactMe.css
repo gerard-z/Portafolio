@@ -1,0 +1,58 @@
+
+.contact-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-me-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}   
+
+.social-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.email-icon {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.contact-me-links a {
+  margin: 0.5rem;
+}
+
+.contact-me-links a:hover {
+  color: #0077b5;
+}
+
+.email-link:hover {
+  color: #0077b5;
+}
+
+.social-link:hover {
+  color: #0077b5;
+}
+
+.contact-me-links a:hover {
+  color: #0077b5;
+}
