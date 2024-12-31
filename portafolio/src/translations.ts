@@ -26,6 +26,8 @@ type Translations = {
     footerBuiltWith: string;
     footerHostedOn: string;
     and: string;
+    skills: string;
+    other: string;
   }
 }
 
@@ -55,6 +57,8 @@ export const translations: Translations = {
     footerBuiltWith: "Proyecto realizado con",
     footerHostedOn: "Alojado en",
     and: "y",
+    skills: "Habilidades",
+    other: "Otros",
   },
   en: {
     home: 'Home',
@@ -81,5 +85,7 @@ export const translations: Translations = {
     footerBuiltWith: "Built with",
     footerHostedOn: "Hosted on",
     and: "and",
+    skills: "Skills",
+    other: "Other",
   }
 } 

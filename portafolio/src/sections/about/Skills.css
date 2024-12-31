@@ -1,0 +1,28 @@
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.skills-container h2 {
+  margin-right: 1rem;
+  width: 10rem;
+  font-size: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.skills-list h3 {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+}

@@ -7,6 +7,7 @@ import { AboutMe } from './sections/about/AboutMe'
 import { ContactMe } from './sections/contact/ContactMe'
 import { FaMoon, FaSun } from 'react-icons/fa'
 import { useTheme } from './hooks/utils/useTheme'
+import { Skills } from './sections/about/Skills'
 
 function App() {
   const [language, setLanguage] = useState<Language>('es')
@@ -96,6 +97,7 @@ function App() {
 
         <SectionContainer id="about" style={{ minHeight: '40%' }}>
           <AboutMe language={language} />
+          <Skills language={language} />
         </SectionContainer>
 
         <SectionContainer id="contact" style={{ minHeight: '40%', borderBottomWidth: 0 }}>
